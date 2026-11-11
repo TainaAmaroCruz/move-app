@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Movê · Fisioterapia domiciliar</title>
+<meta name="description" content="Agenda, rotas e prontuário para fisioterapia domiciliar. Baixe para Android ou abra no iPhone.">
+<meta name="theme-color" content="#0B8F86">
+<link rel="icon" href="app/favicon.png">
+<link rel="apple-touch-icon" href="app/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap">
+<style>
+:root{--agua:#0B8F86;--coral:#FF6A55;--bruma:#DCF3F0;--tinta:#062F2C;--fundo:#F5FBFA;--muted:#4E6664;--line:#CFE6E2;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--fundo:#0A1615;--tinta:#E3F2F0;--muted:#9BB8B4;--line:#22403C;--card:#10201F;--bruma:#12302D;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--tinta);font:16px/1.55 "Archivo",system-ui,sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px max(18px,env(safe-area-inset-right)) 56px max(18px,env(safe-area-inset-left));display:grid;gap:32px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand svg{width:56px;height:56px;flex:none}
+.word{font-style:italic;font-weight:900;font-stretch:125%;font-size:44px;line-height:1;color:var(--agua);margin:0}
+@media (prefers-color-scheme:dark){.word{color:#4FD1C5}}
+h1{font-style:italic;font-weight:900;font-stretch:118%;font-size:clamp(28px,5.4vw,46px);line-height:1.05;margin:0;text-wrap:balance}
+.lead{margin:12px 0 0;color:var(--muted);max-width:56ch;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;display:grid;gap:14px;align-content:start}
+.card.hl{border:2px solid var(--agua)}
+.card h2{margin:0;font-weight:800;font-stretch:112%;font-size:22px;display:flex;align-items:center;gap:10px}
+.os{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.btn{display:block;text-align:center;text-decoration:none;font-weight:800;font-stretch:110%;font-size:17px;padding:15px 18px;border-radius:12px;background:var(--coral);color:#fff}
+.btn.alt{background:var(--agua)}
+.btn:focus-visible{outline:3px solid var(--tinta);outline-offset:2px}
+ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--muted);font-size:15px}
+ol b{color:var(--tinta)}
+.note{background:var(--bruma);border-radius:14px;padding:16px 18px;font-size:15px}
+.note b{font-weight:700}
+footer{color:var(--muted);font-size:13px}
+.ver{font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#0B8F86"/><path d="M14 34 L14 14" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M14 34 L34 34" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M14 22 A12 12 0 0 1 26 34" fill="none" stroke="#FF6A55" stroke-width="3.5" stroke-linecap="round"/><circle cx="14" cy="34" r="3.4" fill="#FF6A55"/></svg>
+    <p class="word">Movê</p>
+  </div>
+
+  <div>
+    <h1>A agenda que anda com o fisioterapeuta.</h1>
+    <p class="lead">Semana de visitas por região, rota com trânsito, plano de cada sessão e prontuário com escala de dor, tudo guardado no seu aparelho.</p>
+  </div>
+
+  <div class="grid">
+    <section class="card" id="android">
+      <span class="os">Android</span>
+      <h2>Instalar no Android</h2>
+      <a class="btn" href="https://github.com/TainaAmaroCruz/move-app/releases/latest/download/move.apk">Baixar o Movê</a>
+      <ol>
+        <li>Toque em <b>Baixar o Movê</b> e abra o arquivo quando terminar.</li>
+        <li>Se o Android avisar, toque em <b>Configurações</b> e ative <b>Permitir desta fonte</b>.</li>
+        <li>Toque em <b>Instalar</b>.</li>
+      </ol>
+      <div class="note">As próximas versões chegam pelo próprio app: aparece o aviso <b>Nova versão</b> e você toca em <b>Atualizar</b>.</div>
+    </section>
+
+    <section class="card" id="iphone">
+      <span class="os">iPhone e iPad</span>
+      <h2>Usar no iPhone</h2>
+      <a class="btn alt" href="app/">Abrir o Movê</a>
+      <ol>
+        <li>Abra este link no <b>Safari</b>.</li>
+        <li>Toque em <b>Compartilhar</b> (o quadrado com a seta) e depois em <b>Adicionar à Tela de Início</b>.</li>
+        <li>Abra sempre pelo ícone do Movê na tela inicial.</li>
+      </ol>
+      <div class="note"><b>Importante:</b> use pelo ícone da tela inicial. Assim o iPhone guarda seus pacientes de forma permanente. As atualizações entram sozinhas quando você abre o app.</div>
+    </section>
+  </div>
+
+  <footer>Movê · fisioterapia domiciliar <span class="ver" id="ver"></span></footer>
+</div>
+<script>
+  // destaca o cartão do aparelho de quem abriu a página
+  var ua = navigator.userAgent || "";
+  var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  var el = document.getElementById(ios ? "iphone" : /Android/.test(ua) ? "android" : null);
+  if (el) { el.classList.add("hl"); el.parentNode.prepend(el); }
+</script>
+</body>
+</html>
